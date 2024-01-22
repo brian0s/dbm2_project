@@ -1,0 +1,297 @@
+& "C:\Program Files\PostgreSQL\16\bin\pg_ctl" -D . -l logfile start
+
+& "C:\Program Files\PostgreSQL\16\bin\createdb" -U brian WorldCup
+
+& "C:\Program Files\PostgreSQL\16\bin\psql" -U brian -d WorldCup
+
+CREATE DATABASE WorldCup;
+
+GRANT ALL PRIVILEGES ON DATABASE WorldCup TO brian;
+
+
+CREATE TABLE Country (
+    Country_ID SERIAL PRIMARY KEY,
+    country_name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE COMPETITION (
+    Year INT PRIMARY KEY,
+    Host INT,
+    Winner INT,
+    Runnerup INT,
+    FOREIGN KEY (Host) REFERENCES Country(Country_ID),
+    FOREIGN KEY (Winner) REFERENCES Country(Country_ID),
+    FOREIGN KEY (Runnerup) REFERENCES Country(Country_ID)
+);
+
+
+Most wins:
+SELECT
+    Country.country_name,
+    COUNT(COMPETITION.Winner) AS Wins
+FROM
+    Country
+JOIN
+    COMPETITION ON Country.Country_name = COMPETITION.Winner
+GROUP BY
+    Country.country_name
+ORDER BY
+    Wins DESC
+LIMIT 1;
+
+
+
+CREATE TABLE PLAYER (
+    Player_ID SERIAL PRIMARY KEY,
+    Player_Name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE COUNTRY (
+    country_name VARCHAR(255) PRIMARY KEY
+);
+
+CREATE TABLE COMPETITION (
+    Year INT PRIMARY KEY,
+    Host VARCHAR(255) NOT NULL,
+    Winner VARCHAR(255) NOT NULL,
+    RunnerUp VARCHAR(255) NOT NULL,
+    FOREIGN KEY (Host) REFERENCES COUNTRY(country_name),
+    FOREIGN KEY (Winner) REFERENCES COUNTRY(country_name),
+    FOREIGN KEY (Runnerup) REFERENCES COUNTRY(country_name)
+);
+
+
+TEAM(Team_ID, country_name, Captain, Manager, Year)
+TEAM(Team_ID, Brazil, , Manager, Year)
+
+CREATE TABLE TEAM (
+    Team_ID SERIAL PRIMARY KEY,
+    country_name VARCHAR(255) REFERENCES COUNTRY(country_name),
+    Captain INT REFERENCES PLAYER(Player_ID),
+    Manager VARCHAR(255),
+    Year INT REFERENCES COMPETITION(Year),
+    CONSTRAINT fk_captain FOREIGN KEY (Captain) REFERENCES PLAYER(Player_ID)
+);
+
+
+SELECT *
+FROM country
+WHERE country_name LIKE 'C%';
+
+-- Assuming 'team' and 'competition' tables already exist with appropriate structures
+
+-- Create the 'match' table
+CREATE TABLE match (
+    match_id SERIAL PRIMARY KEY,
+    team_1 INT REFERENCES team(team_id),
+    team_2 INT REFERENCES team(team_id),
+    date VARCHAR(10),
+    year INT REFERENCES competition(year)
+);
+
+-- Insert a sample record with date as a string
+INSERT INTO match (team_1, team_2, match_date, year)
+VALUES (486, 487, '1930-07-13', 1930);
+
+
+
+CREATE TABLE goal (
+    Player_ID INT,
+    Match_ID INT,
+    Minute VARCHAR(10),
+    PRIMARY KEY (Player_ID, Match_ID, Minute),
+    FOREIGN KEY (Player_ID) REFERENCES player(Player_ID),
+    FOREIGN KEY (Match_ID) REFERENCES match(Match_ID)
+);
+
+
+CREATE TABLE Selection (
+    Player_ID INT,
+    Team_ID INT,
+    FOREIGN KEY (Player_ID) REFERENCES Player(Player_ID),
+    FOREIGN KEY (Team_ID) REFERENCES Team(Team_ID)
+);
+
+
+INSERT INTO GOAL (Player_ID, Match_ID, Minute) VALUES (3,1,'36');
+
+
+/CPUNTRIES THAT BEGIN WITH B/
+
+SELECT Country_Name
+FROM COUNTRY
+WHERE Country_Name LIKE 'B%';
+
+
+
+/COUNTRIES WITH MOST WINS/
+
+SELECT Winner AS country_name, COUNT(Winner) AS wins
+FROM COMPETITION
+GROUP BY Winner
+ORDER BY wins DESC
+LIMIT 1;
+
+
+/ITALIAN TEAMS/
+
+SELECT * FROM team
+WHERE team.country_name = 'Italy';
+
+/PORTUGAL'S BEST SCORER/
+
+SELECT p_goals.player_id, player_name, goal_no FROM 
+(SELECT p_players.player_id, COUNT(p_players.player_id) AS goal_no FROM
+(SELECT player_id, p_teams.team_id FROM
+(SELECT team_id FROM team WHERE country_name = 'Portugal') AS p_teams
+JOIN selection ON selection.team_id = p_teams.team_id) AS p_players
+JOIN goal ON goal.player_id = p_players.player_id
+GROUP BY p_players.player_id) AS p_goals
+JOIN player ON p_goals.player_id = player.player_id
+ORDER BY goal_no DESC;
+
+SELECT * FROM
+(SELECT * FROM 
+(SELECT player.player_id, match_id, minute, player_name FROM goal 
+JOIN player ON goal.player_id = player.player_id
+WHERE match_id = 1) AS result1
+JOIN selection ON result1.player_id = selection.player_id) AS result2;
+
+
+/APPEARANCES BY X PLAYER/
+
+SELECT COUNT(*) AS Appearances FROM
+(SELECT * FROM selection WHERE player_id = 4) AS result1
+JOIN match ON match.team_1 = result1.team_id
+OR match.team_2 = result1.team_id;
+
+/GOALS SCORED BY MBAPPE/
+
+SELECT * FROM goal WHERE player_id = 48;
+
+
+
+
+/PLAYER NAMES, COUNTRIES AND MINUTES OF GOALS IN SPECIFIC MATCHES/
+
+SELECT country_name, player_name, minute FROM 
+(SELECT team_id, player_name, minute FROM
+(SELECT team_id,results.player_id, minute FROM 
+(SELECT * 
+FROM GOAL G
+JOIN match ON 
+match.match_id = g.match_id
+WHERE G.Match_ID = 1) AS results
+JOIN selection
+ON results.player_id = selection.player_id
+WHERE team_id = team_1 OR team_id = team_2) AS tpm
+JOIN player ON tpm.player_id = player.player_id) AS tpnm
+JOIN team ON tpnm.team_id = team.team_id;
+
+SELECT country_name, player_name, minute FROM 
+(SELECT team_id, player_name, minute FROM
+(SELECT team_id,results.player_id, minute FROM 
+(SELECT * 
+FROM GOAL G
+JOIN match ON 
+match.match_id = g.match_id
+WHERE G.Match_ID = 1) AS results
+JOIN selection
+ON results.player_id = selection.player_id
+WHERE team_id = team_1 OR team_id = team_2) AS tpm
+JOIN player ON tpm.player_id = player.player_id) AS tpnm
+JOIN team ON tpnm.team_id = team.team_id
+ORDER BY CAST(minute AS INTEGER) ASC;
+
+
+/MOST WC APPEARANCES PER COUNTRY/
+
+SELECT country_name, COUNT(country_name) AS Appearances FROM team
+GROUP BY country_name
+ORDER BY Appearances DESC
+LIMIT 10;
+
+List Germany’s three best goal scorers.
+
+SELECT COUNT(*) AS goals FROM goal
+JOIN selection ON goal.player_id = selection.player_id
+JOIN team ON selection.team_id = team.team_id
+WHERE team.country_name = 'Germany';
+
+
+
+SELECT DISTINCT goal.player_id, match_id, minute
+FROM goal
+JOIN selection ON goal.player_id = selection.player_id
+JOIN team ON selection.team_id = team.team_id
+WHERE team.country_name = 'Germany'
+GROUP BY goal.player_id
+LIMIT 15;
+
+
+
+SELECT conname, conrelid::regclass, conkey
+FROM pg_constraint;
+
+                    conname                     |         conrelid         |  conkey
+------------------------------------------------+--------------------------+-----------
+ player_pkey                                    | player                   | {1}
+ country_pkey                                   | country                  | {1}
+ competition_pkey                               | competition              | {1}
+ competition_host_fkey                          | competition              | {2}
+ competition_winner_fkey                        | competition              | {3}
+ competition_runnerup_fkey                      | competition              | {4}
+ team_pkey                                      | team                     | {1}
+ team_country_name_fkey                         | team                     | {2}
+ team_captain_fkey                              | team                     | {3}
+ team_year_fkey                                 | team                     | {5}
+ fk_captain                                     | team                     | {3}
+ match_pkey                                     | match                    | {1}
+ match_team_1_fkey                              | match                    | {2}
+ match_team_2_fkey                              | match                    | {3}
+ match_year_fkey                                | match                    | {5}
+ goal_pkey                                      | goal                     | {1,2,3}
+ goal_player_id_fkey                            | goal                     | {1}
+ goal_match_id_fkey                             | goal                     | {2}
+ selection_player_id_fkey                       | selection                | {1}
+ selection_team_id_fkey                         | selection                | {2}
+
+ INSERT INTO Competition (year, host, winner, runnerup) VALUES ('1932', 'Brian', 'Uruguay', 'Argentina');
+
+ INSERT INTO Country (Country_Name) VALUES ('Republic of Ireland');
+ 
+DELETE FROM country
+WHERE country_name = 'new country';
+
+SELECT * FROM country WHERE country_name = 'new country';
+
+INSERT INTO GOAL (Player_ID, Match_ID, Minute) VALUES (1,1,'100');
+
+ datid | datname  |  pid  | leader_pid | usesysid | usename | application_name | client_addr | client_hostname | client_port |         backend_start         |          xact_start           |          query_start          |         state_change          | wait_event_type |     wait_event      | state  | backend_xid | backend_xmin | query_id |              query              |         backend_type
+-------+----------+-------+------------+----------+---------+------------------+-------------+-----------------+-------------+-------------------------------+-------------------------------+-------------------------------+-------------------------------+-----------------+---------------------+--------+-------------+--------------+----------+---------------------------------+------------------------------
+       |          |  9840 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:51.304653+01 |                               |                               |                               | Activity        | AutoVacuumMain      |        |             |              |          |                                 | autovacuum launcher
+       |          | 24468 |            |       10 | brian   |                  |             |                 |             | 2023-12-30 13:58:51.42875+01  |                               |                               |                               | Activity        | LogicalLauncherMain |        |             |              |          |                                 | logical replication launcher
+ 16386 | WorldCup | 17132 |            |       10 | brian   | psql             | ::1         |                 |       65104 | 2023-12-30 13:59:20.21539+01  | 2023-12-30 14:04:46.295648+01 | 2023-12-30 14:05:04.803192+01 | 2023-12-30 14:05:04.803194+01 |                 |                     | active |       14807 |        14807 |          | SELECT * FROM pg_stat_activity; | client backend
+       |          | 18276 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:18.199422+01 |                               |                               |                               | Activity        | BgWriterHibernate   |        |             |              |          |                                 | background writer
+       |          | 14272 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:18.098985+01 |                               |                               |                               | Activity        | CheckpointerMain    |        |             |              |          |                                 | checkpointer
+       |          |  9852 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:51.303531+01 |                               |                               |                               | Activity        | WalWriterMain       |        |             |              |          |                                 | walwriter
+
+
+ datid | datname  |  pid  | leader_pid | usesysid | usename | application_name | client_addr | client_hostname | client_port |         backend_start         |          xact_start           
+-------+----------+-------+------------+----------+---------+------------------+-------------+-----------------+-------------+-------------------------------+-------------------------------
+       |          |  9840 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:51.304653+01 |                               
+       |          | 24468 |            |       10 | brian   |                  |             |                 |             | 2023-12-30 13:58:51.42875+01  |                               
+ 16386 | WorldCup | 17132 |            |       10 | brian   | psql             | ::1         |                 |       65104 | 2023-12-30 13:59:20.21539+01  | 2023-12-30 14:04:46.295648+01 
+       |          | 18276 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:18.199422+01 |                               
+       |          | 14272 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:18.098985+01 |                               
+       |          |  9852 |            |          |         |                  |             |                 |             | 2023-12-30 13:58:51.303531+01 |                               
+
+
+|          query_start          |         state_change          | wait_event_type |     wait_event      | state  | backend_xid | backend_xmin | query_id |              query              |         backend_type
++-------------------------------+-------------------------------+-----------------+---------------------+--------+-------------+--------------+----------+---------------------------------+------------------------------
+|                               |                               | Activity        | AutoVacuumMain      |        |             |              |          |                                 | autovacuum launcher
+|                               |                               | Activity        | LogicalLauncherMain |        |             |              |          |                                 | logical replication launcher
+| 2023-12-30 14:05:04.803192+01 | 2023-12-30 14:05:04.803194+01 |                 |                     | active |       14807 |        14807 |          | SELECT * FROM pg_stat_activity; | client backend
+|                               |                               | Activity        | BgWriterHibernate   |        |             |              |          |                                 | background writer
+|                               |                               | Activity        | CheckpointerMain    |        |             |              |          |                                 | checkpointer
+|                               |                               | Activity        | WalWriterMain       |        |             |              |          |                                 | walwriter

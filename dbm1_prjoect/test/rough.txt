@@ -1,0 +1,27 @@
+SELECT goal.PLAYER_ID, COUNT(*) AS GOALS FROM goal
+JOIN selection ON goal.PLAYER_ID = selection.PLAYER_ID
+JOIN team ON selection.TEAM_ID = team.TEAM_ID
+WHERE team.COUNTRY_NAME = 'Argentina'
+GROUP BY goal.PLAYER_ID
+ORDER BY GOALS DESC
+LIMIT 3;
+
+
+SELECT goal.PLAYER_ID, COUNT(*) AS GOALS FROM goal
+JOIN selection ON goal.PLAYER_ID = selection.PLAYER_ID
+JOIN team ON selection.TEAM_ID = team.TEAM_ID
+WHERE team.COUNTRY_NAME = 'France'
+GROUP BY goal.PLAYER_ID
+ORDER BY GOALS DESC
+LIMIT 3;#
+
+
+SELECT match.MATCH_ID, COUNT(match.MATCH_ID) AS A_GOALS 
+FROM goal JOIN player ON goal.PLAYER_ID = player.PLAYER_ID 
+JOIN selection ON player.PLAYER_ID = selection.PLAYER_ID 
+JOIN team ON selection.TEAM_ID = team.TEAM_ID 
+WHERE team.COUNTRY_NAME = 'Argentina' match FULL JOIN ON team 
+WHERE match.TEAM_1 = team.TEAM_ID OR match.TEAM_2 = team.TEAM_ID AND team.COUNTRY_NAME = 'Argentina' 
+GROUP BY match.MATCH_ID
+ORDER BY A_GOALS DESC
+LIMIT 1;

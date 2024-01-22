@@ -1,0 +1,180 @@
+to do:
+make each goal have a match id, playerid, minute
+remove goal from match
+country pk is now name
+player fk
+weak relationship
+
+
+optional:
+remove captain duplicates
+create manager entity
+
+INSERT INTO COUNTRY (, HostID, WinnerID, RunnerupID)
+VALUES (2023, 1, 2, 3);
+
+INSERT INTO PLAYER (Player_Name) VALUES ('John Doe');
+
+INSERT INTO TEAM (Country_Name, Captain, Manager, Year)
+VALUES ('Argentina', 1, 'Lionel Scaloni', 2022);
+
+
+INSERT INTO "MATCH" (Team_1, Team_2, Date, Year)
+VALUES ('Argentina', 'France', '2023-11-01', 2023);
+
+
+CREATE TABLE "match" (
+    Match_ID SERIAL PRIMARY KEY,
+    Team_1 INT REFERENCES TEAM (Team_ID),
+    Team_2 INT REFERENCES TEAM (Team_ID),
+    Date VARCHAR(20),
+    Year INT REFERENCES Competitions (Year)
+);
+
+
+year, Player_Name, name 
+
+CREATE TABLE TEAM (
+    Team_ID serial PRIMARY KEY,
+    Country_Name VARCHAR(255) REFERENCES Countries(name),
+    Captain INT REFERENCES PLAYER(Player_ID),
+    Manager VARCHAR(255),
+    Year INT REFERENCES Competitions(year)
+);
+
+CREATE TABLE goal (
+    Player_ID INT,
+    Match_ID INT,
+    Minute VARCHAR(255),
+    PRIMARY KEY (Player_ID, Match_ID, Minute),
+    FOREIGN KEY (Player_ID) REFERENCES PLAYER (Player_ID),
+    FOREIGN KEY (Match_ID) REFERENCES MATCH (Match_ID)
+);
+
+INSERT INTO GOAL (Player_ID, Match_ID, Minute) VALUES (1, 1, 45);
+
+
+
+SELECT Match_ID, MAX(GoalCount) AS Goals_Scored
+FROM (
+    SELECT Match_ID, COUNT(*) AS GoalCount
+    FROM GOAL
+    WHERE Player_ID IN (
+        SELECT Player_ID
+        FROM player
+        WHERE Player_Name LIKE '%Germany%'
+    )
+    GROUP BY Match_ID
+) AS GoalsPerMatch;
+
+
+SELECT Team_ID, COUNT(*) AS MatchWins
+FROM match
+WHERE Team_ID NOT IN (
+    SELECT Winner
+    FROM COMPETITION
+)
+GROUP BY Team_ID
+ORDER BY MatchWins DESC
+LIMIT 1;
+
+SELECT Player_Name FROM goals JOIN ON Player_ID;
+
+SELECT p.Player_ID
+FROM goal AS g
+JOIN player AS p ON g.Player_ID = p.Player_ID;
+
+SELECT p.Player_Name, g.Match_ID AS GoalsScored
+FROM Player AS p
+RIGHT JOIN Goal AS g ON p.Player_ID = g.Player_ID
+WHERE p.Player_ID;
+
+
+SELECT DISTINCT player.Player_Name
+FROM competitions
+JOIN team ON competitions.host = team.Country_name AND competitions.year = team.year 
+JOIN selection ON selection.Team_ID = team.Team_ID
+JOIN goal ON goal.Player_ID = selection.Player_ID
+JOIN match ON match.Match_ID = goal.Match_ID WHERE match.year = competitions.year
+JOIN player ON player.Player_ID = goal.Player_ID;
+
+%%FULL LEFT JOIN selection ON selection.Team_ID = team.Team_ID
+
+SELECT manager
+FROM competitions
+JOIN team ON competitions.host = team.Country_name AND competitions.year = team.year; 
+
+
+σmanager(competitions ⋈ competitions.host=team.Country_Name team) ∩ (competitions ⋈ competitions.year=team.year team)
+
+
+CREATE TABLE Countries (
+    Name VARCHAR(255) PRIMARY KEY
+);
+
+INSERT INTO Countries (Name)
+VALUES  ('Brazil');
+
+INSERT INTO Countries (Name)
+VALUES ('Brazil');
+
+SELECT name
+FROM countries
+WHERE name LIKE 'B%';
+
+
+
+INSERT INTO Competitions (year, host, winner, runner_up)
+VALUES (2023, 'France', 'Italy', 'Germany');
+
+INSERT INTO Selection (Player_ID, Team_ID) VALUES (1, 2);
+
+CREATE TABLE selection (
+    Player_ID INT,
+    Team_ID INT,
+    PRIMARY KEY (Player_ID, Team_ID),
+    FOREIGN KEY (Player_ID) REFERENCES PLAYER(Player_ID),
+    FOREIGN KEY (Team_ID) REFERENCES TEAM(Team_ID)
+);
+
+
+INSERT INTO Countries (Name) VALUES ('British Virgin Islands');
+INSERT INTO Countries (Name) VALUES ('Anguilla');
+INSERT INTO Countries (Name) VALUES ('San Marino');
+
+
+σmanager(competitions ⋈ competitions.host=team.Country_Name team) ∩ (competitions ⋈ competitions.year=team.year team)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT name
+FROM country
+WHERE name LIKE 'B%';
+
+SELECT winner, COUNT(*) AS wins
+FROM competitions
+GROUP BY winner
+ORDER BY wins DESC
+LIMIT 1;
+
+SELECT manager
+FROM competitions
+JOIN team ON competitions.host = team.Country_name AND competitions.year
+= team.year; 
+
+
+PS C:\Users\Public\Public Code\dbm1\dbm1_prjoect\test> & "C:\Program Files\PostgreSQL\16\bin\pg_ctl" -D . -l logfile start
+

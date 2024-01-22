@@ -1,0 +1,19 @@
+"West Germany", "Germany"
+**"Germany DR", "Germany"
+"United States", "USA"
+"Côte d'Ivoire", "Côte dIvoire"
+"\xa0", " "
+"M'barek Boussoufa", "Mbarek Boussoufa"
+Suriname
+
+Korea and Japan host
+
+Weird country names led to manual instertion of names in Country
+    and Competition table
+
+Missing captains for years 2014-1998
+had to be manually entered
+
+Parsing goals from string in order to attribute to players
+
+Syncronising data (e.g. Goal having correct player, min and match)
