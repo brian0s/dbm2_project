@@ -295,3 +295,41 @@ INSERT INTO GOAL (Player_ID, Match_ID, Minute) VALUES (1,1,'100');
 |                               |                               | Activity        | BgWriterHibernate   |        |             |              |          |                                 | background writer
 |                               |                               | Activity        | CheckpointerMain    |        |             |              |          |                                 | checkpointer
 |                               |                               | Activity        | WalWriterMain       |        |             |              |          |                                 | walwriter
+
+
+SELECT 
+    player.player_name,
+    competition.year,
+    team.country_name
+FROM
+    match
+JOIN
+    competition ON match.year = competition.year
+JOIN
+    goal ON match.match_id = goal.match_id
+JOIN
+    selection ON selection.player_id = goal.player_id
+JOIN
+    team ON team.year = match.year
+JOIN
+    player ON player.player_id = selection.player_id
+WHERE
+    (match.team_1 = competition.host OR match.team_2 = competition.host)
+    AND match.year = competition.year;
+
+
+
+SELECT TEAM.Year, PLAYER.Player_Name, TEAM.Manager FROM TEAM 
+WHERE TEAM.Country_Name = 'Italy'
+JOIN PLAYER ON TEAM.Captain = PLAYER.Player_ID;
+
+SELECT TEAM.Year, PLAYER.Player_Name, TEAM.Manager
+FROM TEAM
+JOIN PLAYER ON TEAM.Captain = PLAYER.Player_ID
+WHERE TEAM.Country_Name = 'Italy';
+
+
+SELECT GOAL.Match_ID, PLAYER.Player_Name, GOAL.Minute
+FROM PLAYER
+JOIN GOAL ON PLAYER.Player_ID = GOAL.Player_ID
+WHERE PLAYER.Player_Name = 'Kylian Mbappé';
