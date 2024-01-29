@@ -9892,3 +9892,33 @@
 2024-01-29 16:19:39.160 CET [8004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.319 s, sync=0.009 s, total=0.344 s; sync files=4, longest=0.005 s, average=0.003 s; distance=10 kB, estimate=10 kB; lsn=0/2612328, redo lsn=0/26122F0
 2024-01-29 16:29:38.163 CET [8004] LOG:  checkpoint starting: time
 2024-01-29 16:29:38.534 CET [8004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.334 s, sync=0.017 s, total=0.372 s; sync files=4, longest=0.008 s, average=0.005 s; distance=10 kB, estimate=10 kB; lsn=0/2614F20, redo lsn=0/2614EE8
+2024-01-29 17:58:40.540 CET [18576] LOG:  starting PostgreSQL 16.0, compiled by Visual C++ build 1935, 64-bit
+2024-01-29 17:58:40.548 CET [18576] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-29 17:58:40.548 CET [18576] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-29 17:58:40.624 CET [16512] LOG:  database system was interrupted; last known up at 2024-01-29 16:29:38 CET
+2024-01-29 17:58:47.988 CET [16512] LOG:  could not open file "./logfile": sharing violation
+2024-01-29 17:58:47.988 CET [16512] DETAIL:  Continuing to retry for 30 seconds.
+2024-01-29 17:58:47.988 CET [16512] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2024-01-29 17:59:15.137 CET [16512] LOG:  syncing data directory (fsync), elapsed time: 34.51 s, current path: ./pg_commit_ts
+2024-01-29 17:59:15.180 CET [16512] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-01-29 17:59:15.208 CET [16512] LOG:  redo starts at 0/2614EE8
+2024-01-29 17:59:15.208 CET [16512] LOG:  invalid record length at 0/2614FD0: expected at least 24, got 0
+2024-01-29 17:59:15.209 CET [16512] LOG:  redo done at 0/2614F98 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-01-29 17:59:15.233 CET [15948] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-01-29 17:59:15.271 CET [15948] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.006 s, total=0.042 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/2614FD0, redo lsn=0/2614FD0
+2024-01-29 17:59:15.326 CET [18576] LOG:  database system is ready to accept connections
+2024-01-29 17:59:34.442 CET [10012] ERROR:  syntax error at or near ":" at character 27
+2024-01-29 17:59:34.442 CET [10012] STATEMENT:  SELECT * FROM competitions:
+	;
+2024-01-29 17:59:36.891 CET [10012] ERROR:  relation "competitions" does not exist at character 15
+2024-01-29 17:59:36.891 CET [10012] STATEMENT:  SELECT * FROM competitions;
+2024-01-29 18:01:37.246 CET [10012] ERROR:  relation "competitions" does not exist at character 15
+2024-01-29 18:01:37.246 CET [10012] STATEMENT:  SELECT * FROM competitions;
+2024-01-29 18:01:50.270 CET [18576] LOG:  received fast shutdown request
+2024-01-29 18:01:50.271 CET [3460] ERROR:  canceling statement due to user request
+2024-01-29 18:01:50.273 CET [18576] LOG:  aborting any active transactions
+2024-01-29 18:01:50.280 CET [18576] LOG:  background worker "logical replication launcher" (PID 3460) exited with exit code 1
+2024-01-29 18:01:50.285 CET [15948] LOG:  shutting down
+2024-01-29 18:01:50.287 CET [15948] LOG:  checkpoint starting: shutdown immediate
+2024-01-29 18:01:50.307 CET [15948] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.003 s, total=0.022 s; sync files=2, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=2 kB; lsn=0/2615820, redo lsn=0/2615820
+2024-01-29 18:01:50.327 CET [18576] LOG:  database system is shut down
