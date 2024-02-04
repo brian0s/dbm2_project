@@ -1,0 +1,14 @@
+# Classification Problem:
+Can we classify the round reached by a team that has qualified for the world cup?
+
+Round-Classifier-Final.ipynb is the jupyter notebook containing a full description of our problem and solution.
+
+new.csv is the csv file detailing each teams Country, GoalsFor/90min, GoalsAgainst/90min and GoalDifference/90min.
+simple-new.csv is the same as new.csv however each statistic is rounded to the nearest 0.125.
+
+Round-Classifier.joblib is the best model we trained on new.csv
+Round-Classifier-Smoothed.joblib is the best model we trained on new-smoothed.csv
+
+Round-Classiifer-Smoothed.dot is a visualisation of Round-Classifier-Smoothed.joblib
+
+by Eike Stoltze and Brian O'Sullivan

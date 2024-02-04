@@ -1,0 +1,490 @@
+Country,Year,GoalsFor,GoalsAgainst,Goal Difference,Round Achieved
+Argentina,2022,2.0,1.0,0.875,Final
+France,2022,2.125,1.125,1.125,Final
+Croatia,2022,1.0,0.875,0.125,Third-place match
+Morocco,2022,0.875,0.625,0.125,Third-place match
+Portugal,2022,2.375,1.25,1.25,Quarter-finals
+England,2022,2.625,0.75,1.75,Quarter-finals
+Brazil,2022,1.5,0.5,1.0,Quarter-finals
+Netherlands,2022,1.875,0.75,1.125,Quarter-finals
+Spain,2022,2.125,0.75,1.375,Round of 16
+Switzerland,2022,1.25,2.25,-1.0,Round of 16
+Japan,2022,1.125,0.875,0.25,Round of 16
+Korea Republic,2022,1.25,2.0,-0.75,Round of 16
+Poland,2022,0.75,1.25,-0.5,Round of 16
+Senegal,2022,1.25,1.75,-0.5,Round of 16
+United States,2022,0.75,1.0,-0.25,Round of 16
+Australia,2022,1.0,1.5,-0.5,Round of 16
+Ghana,2022,1.625,2.375,-0.625,Group stage
+Uruguay,2022,0.625,0.625,0.0,Group stage
+Cameroon,2022,1.375,1.375,0.0,Group stage
+Serbia,2022,1.625,2.625,-1.0,Group stage
+Canada,2022,0.625,2.375,-1.625,Group stage
+Belgium,2022,0.375,0.625,-0.375,Group stage
+Costa Rica,2022,1.0,3.625,-2.625,Group stage
+Germany,2022,2.0,1.625,0.375,Group stage
+Denmark,2022,0.375,1.0,-0.625,Group stage
+Tunisia,2022,0.375,0.375,0.0,Group stage
+Saudi Arabia,2022,1.0,1.625,-0.625,Group stage
+Mexico,2022,0.625,1.0,-0.375,Group stage
+Ecuador,2022,1.375,1.0,0.375,Group stage
+Qatar,2022,0.375,2.375,-2.0,Group stage
+IR Iran,2022,1.375,2.375,-1.0,Group stage
+Wales,2022,0.375,2.0,-1.625,Group stage
+France,2018,2.0,0.875,1.125,Final
+Croatia,2018,1.75,1.125,0.625,Final
+Belgium,2018,2.25,0.875,1.375,Third-place match
+England,2018,1.625,1.0,0.5,Third-place match
+Sweden,2018,1.25,0.75,0.375,Quarter-finals
+Russia,2018,2.0,1.25,0.75,Quarter-finals
+Uruguay,2018,1.375,0.625,0.75,Quarter-finals
+Brazil,2018,1.625,0.625,1.0,Quarter-finals
+Switzerland,2018,1.25,1.25,0.0,Round of 16
+Colombia,2018,1.375,0.75,0.75,Round of 16
+Mexico,2018,0.75,1.5,-0.75,Round of 16
+Japan,2018,1.5,1.75,-0.25,Round of 16
+Spain,2018,1.625,1.375,0.25,Round of 16
+Denmark,2018,0.75,0.5,0.25,Round of 16
+Argentina,2018,1.5,2.25,-0.75,Round of 16
+Portugal,2018,1.5,1.5,0.0,Round of 16
+Poland,2018,0.625,1.625,-1.0,Group stage
+Senegal,2018,1.375,1.375,0.0,Group stage
+Panama,2018,0.625,3.625,-3.0,Group stage
+Tunisia,2018,1.625,2.625,-1.0,Group stage
+Korea Republic,2018,1.0,1.0,0.0,Group stage
+Germany,2018,0.625,1.375,-0.625,Group stage
+Costa Rica,2018,0.625,1.625,-1.0,Group stage
+Serbia,2018,0.625,1.375,-0.625,Group stage
+Australia,2018,0.625,1.625,-1.0,Group stage
+Peru,2018,0.625,0.625,0.0,Group stage
+Iceland,2018,0.625,1.625,-1.0,Group stage
+Nigeria,2018,1.0,1.375,-0.375,Group stage
+Saudi Arabia,2018,0.625,2.375,-1.625,Group stage
+Egypt,2018,0.625,2.0,-1.375,Group stage
+Morocco,2018,0.625,1.375,-0.625,Group stage
+IR Iran,2018,0.625,0.625,0.0,Group stage
+Germany,2014,2.375,0.5,1.875,Final
+Argentina,2014,1.0,0.5,0.5,Final
+Brazil,2014,1.5,1.875,-0.375,Third-place match
+Netherlands,2014,2.0,0.5,1.375,Third-place match
+Belgium,2014,1.125,0.5,0.5,Quarter-finals
+Costa Rica,2014,0.875,0.375,0.5,Quarter-finals
+France,2014,2.0,0.625,1.375,Quarter-finals
+Colombia,2014,2.375,0.75,1.625,Quarter-finals
+Switzerland,2014,1.625,1.625,0.0,Round of 16
+United States,2014,1.125,1.375,-0.25,Round of 16
+Nigeria,2014,0.75,1.25,-0.5,Round of 16
+Algeria,2014,1.625,1.625,0.0,Round of 16
+Mexico,2014,1.25,0.75,0.5,Round of 16
+Greece,2014,0.75,1.125,-0.5,Round of 16
+Chile,2014,1.375,0.875,0.5,Round of 16
+Uruguay,2014,1.0,1.5,-0.5,Round of 16
+Portugal,2014,1.375,2.375,-1.0,Group stage
+Ghana,2014,1.375,2.0,-0.625,Group stage
+Korea Republic,2014,1.0,2.0,-1.0,Group stage
+Russia,2014,0.625,1.0,-0.375,Group stage
+Bosnia and Herzegovina,2014,1.375,1.375,0.0,Group stage
+IR Iran,2014,0.375,1.375,-1.0,Group stage
+Honduras,2014,0.375,2.625,-2.375,Group stage
+Ecuador,2014,1.0,1.0,0.0,Group stage
+England,2014,0.625,1.375,-0.625,Group stage
+Italy,2014,0.625,1.0,-0.375,Group stage
+Japan,2014,0.625,2.0,-1.375,Group stage
+Côte dIvoire,2014,1.375,1.625,-0.375,Group stage
+Australia,2014,1.0,3.0,-2.0,Group stage
+Spain,2014,1.375,2.375,-1.0,Group stage
+Croatia,2014,2.0,2.0,0.0,Group stage
+Cameroon,2014,0.375,3.0,-2.625,Group stage
+Netherlands,2010,1.625,0.875,0.875,Final
+Spain,2010,1.125,0.25,0.875,Final
+Uruguay,2010,1.5,1.125,0.375,Third-place match
+Germany,2010,2.25,0.75,1.625,Third-place match
+Argentina,2010,2.0,1.25,0.75,Quarter-finals
+Paraguay,2010,0.5,0.375,0.25,Quarter-finals
+Brazil,2010,1.75,0.75,1.0,Quarter-finals
+Ghana,2010,0.875,0.75,0.125,Quarter-finals
+Japan,2010,0.875,0.5,0.5,Round of 16
+Portugal,2010,1.75,0.25,1.5,Round of 16
+Slovakia,2010,1.25,1.75,-0.5,Round of 16
+Chile,2010,0.75,1.25,-0.5,Round of 16
+England,2010,0.75,1.25,-0.5,Round of 16
+Mexico,2010,1.0,1.25,-0.25,Round of 16
+Korea Republic,2010,1.5,2.0,-0.5,Round of 16
+United States,2010,1.125,1.125,0.0,Round of 16
+Korea DPR,2010,0.375,4.0,-3.625,Group stage
+Côte dIvoire,2010,1.375,1.0,0.375,Group stage
+Switzerland,2010,0.375,0.375,0.0,Group stage
+Honduras,2010,0.0,1.0,-1.0,Group stage
+New Zealand,2010,0.625,0.625,0.0,Group stage
+Italy,2010,1.375,1.625,-0.375,Group stage
+Denmark,2010,1.0,2.0,-1.0,Group stage
+Cameroon,2010,0.625,1.625,-1.0,Group stage
+Slovenia,2010,1.0,1.0,0.0,Group stage
+Algeria,2010,0.0,0.625,-0.625,Group stage
+Australia,2010,1.0,2.0,-1.0,Group stage
+Serbia,2010,0.625,1.0,-0.375,Group stage
+France,2010,0.375,1.375,-1.0,Group stage
+South Africa,2010,1.0,1.625,-0.625,Group stage
+Nigeria,2010,1.0,1.625,-0.625,Group stage
+Greece,2010,0.625,1.625,-1.0,Group stage
+Italy,2006,1.625,0.25,1.25,Final
+France,2006,1.25,0.375,0.875,Final
+Germany,2006,1.875,0.75,1.0,Third-place match
+Portugal,2006,1.0,0.625,0.25,Third-place match
+England,2006,1.125,0.375,0.75,Quarter-finals
+Brazil,2006,2.0,0.375,1.625,Quarter-finals
+Argentina,2006,2.0,0.5,1.375,Quarter-finals
+Ukraine,2006,1.0,1.25,-0.375,Quarter-finals
+Ghana,2006,1.0,1.5,-0.5,Round of 16
+Spain,2006,2.25,1.0,1.25,Round of 16
+Australia,2006,1.25,1.5,-0.25,Round of 16
+Switzerland,2006,0.875,0.0,0.875,Round of 16
+Ecuador,2006,1.25,1.0,0.25,Round of 16
+Netherlands,2006,0.75,0.5,0.25,Round of 16
+Sweden,2006,0.75,1.0,-0.25,Round of 16
+Mexico,2006,1.125,1.125,0.0,Round of 16
+Saudi Arabia,2006,0.625,2.375,-1.625,Group stage
+Tunisia,2006,1.0,2.0,-1.0,Group stage
+Togo,2006,0.375,2.0,-1.625,Group stage
+Korea Republic,2006,1.0,1.375,-0.375,Group stage
+United States,2006,0.625,2.0,-1.375,Group stage
+Czech Republic,2006,1.0,1.375,-0.375,Group stage
+Japan,2006,0.625,2.375,-1.625,Group stage
+Croatia,2006,0.625,1.0,-0.375,Group stage
+IR Iran,2006,0.625,2.0,-1.375,Group stage
+Angola,2006,0.375,0.625,-0.375,Group stage
+Côte dIvoire,2006,1.625,2.0,-0.375,Group stage
+Serbia and Montenegro,2006,0.625,3.375,-2.625,Group stage
+Costa Rica,2006,1.0,3.0,-2.0,Group stage
+Poland,2006,0.625,1.375,-0.625,Group stage
+Paraguay,2006,0.625,0.625,0.0,Group stage
+Trinidad and Tobago,2006,0.0,1.375,-1.375,Group stage
+Germany,2002,2.0,0.375,1.625,Final
+Brazil,2002,2.625,0.625,2.0,Final
+Korea Republic,2002,1.0,0.75,0.25,Third-place match
+Türkiye,2002,1.375,0.875,0.5,Third-place match
+Spain,2002,1.75,0.875,0.875,Quarter-finals
+Senegal,2002,1.25,1.0,0.125,Quarter-finals
+England,2002,1.25,0.625,0.625,Quarter-finals
+United States,2002,1.375,1.375,0.0,Quarter-finals
+Japan,2002,1.25,0.75,0.5,Round of 16
+Italy,2002,1.125,1.125,0.0,Round of 16
+Mexico,2002,1.0,1.0,0.0,Round of 16
+Belgium,2002,1.5,1.75,-0.25,Round of 16
+Sweden,2002,1.125,1.125,0.0,Round of 16
+Republic of Ireland,2002,1.375,0.75,0.75,Round of 16
+Paraguay,2002,1.5,1.75,-0.25,Round of 16
+Denmark,2002,1.25,1.25,0.0,Round of 16
+Tunisia,2002,0.375,1.625,-1.375,Group stage
+Russia,2002,1.375,1.375,0.0,Group stage
+Portugal,2002,2.0,1.375,0.625,Group stage
+Poland,2002,1.0,2.375,-1.375,Group stage
+Costa Rica,2002,1.625,2.0,-0.375,Group stage
+China PR,2002,0.0,3.0,-3.0,Group stage
+Ecuador,2002,0.625,1.375,-0.625,Group stage
+Croatia,2002,0.625,1.0,-0.375,Group stage
+Argentina,2002,0.625,0.625,0.0,Group stage
+Nigeria,2002,0.375,1.0,-0.625,Group stage
+South Africa,2002,1.625,1.625,0.0,Group stage
+Slovenia,2002,0.625,2.375,-1.625,Group stage
+France,2002,0.0,1.0,-1.0,Group stage
+Uruguay,2002,1.375,1.625,-0.375,Group stage
+Saudi Arabia,2002,0.0,4.0,-4.0,Group stage
+Cameroon,2002,0.625,1.0,-0.375,Group stage
+Brazil,1998,1.875,1.375,0.5,Final
+France,1998,2.0,0.25,1.75,Final
+Netherlands,1998,1.75,1.0,0.875,Third-place match
+Croatia,1998,1.625,0.75,0.875,Third-place match
+Argentina,1998,1.875,0.75,1.125,Quarter-finals
+Germany,1998,1.625,1.25,0.375,Quarter-finals
+Italy,1998,1.5,0.5,1.0,Quarter-finals
+Denmark,1998,1.75,1.375,0.375,Quarter-finals
+Romania,1998,1.0,0.75,0.25,Round of 16
+England,1998,1.625,0.875,0.75,Round of 16
+Mexico,1998,2.0,1.75,0.25,Round of 16
+FR Yugoslavia,1998,1.25,1.0,0.25,Round of 16
+Paraguay,1998,0.75,0.5,0.25,Round of 16
+Nigeria,1998,1.5,2.25,-0.75,Round of 16
+Norway,1998,1.25,1.25,0.0,Round of 16
+Chile,1998,1.25,2.0,-0.75,Round of 16
+Japan,1998,0.375,1.375,-1.0,Group stage
+Jamaica,1998,1.0,3.0,-2.0,Group stage
+Tunisia,1998,0.375,1.375,-1.0,Group stage
+Colombia,1998,0.375,1.0,-0.625,Group stage
+Belgium,1998,1.0,1.0,0.0,Group stage
+Korea Republic,1998,0.625,3.0,-2.375,Group stage
+United States,1998,0.375,1.625,-1.375,Group stage
+IR Iran,1998,0.625,1.375,-0.625,Group stage
+South Africa,1998,1.0,2.0,-1.0,Group stage
+Saudi Arabia,1998,0.625,2.375,-1.625,Group stage
+Spain,1998,2.625,1.375,1.375,Group stage
+Bulgaria,1998,0.375,2.375,-2.0,Group stage
+Austria,1998,1.0,1.375,-0.375,Group stage
+Cameroon,1998,0.625,1.625,-1.0,Group stage
+Scotland,1998,0.625,2.0,-1.375,Group stage
+Morocco,1998,1.625,1.625,0.0,Group stage
+Brazil,1994,1.5,0.375,1.125,Final
+Italy,1994,1.0,0.625,0.375,Final
+Sweden,1994,2.0,1.125,1.0,Third-place match
+Bulgaria,1994,1.375,1.5,-0.125,Third-place match
+Germany,1994,1.75,1.375,0.375,Quarter-finals
+Romania,1994,1.875,1.75,0.25,Quarter-finals
+Spain,1994,2.0,1.25,0.75,Quarter-finals
+Netherlands,1994,1.625,1.25,0.375,Quarter-finals
+Nigeria,1994,1.625,0.875,0.75,Round of 16
+Mexico,1994,0.875,0.875,0.0,Round of 16
+Republic of Ireland,1994,0.5,1.0,-0.5,Round of 16
+United States,1994,0.75,1.0,-0.25,Round of 16
+Saudi Arabia,1994,1.25,1.5,-0.25,Round of 16
+Argentina,1994,2.0,1.5,0.5,Round of 16
+Belgium,1994,1.0,1.0,0.0,Round of 16
+Switzerland,1994,1.25,1.75,-0.5,Round of 16
+Greece,1994,0.0,3.375,-3.375,Group stage
+Morocco,1994,0.625,1.625,-1.0,Group stage
+Norway,1994,0.375,0.375,0.0,Group stage
+Russia,1994,2.375,2.0,0.375,Group stage
+Cameroon,1994,1.0,3.625,-2.625,Group stage
+Korea Republic,1994,1.375,1.625,-0.375,Group stage
+Bolivia,1994,0.375,1.375,-1.0,Group stage
+Colombia,1994,1.375,1.625,-0.375,Group stage
+Germany,1990,2.0,0.625,1.375,Final
+Argentina,1990,0.625,0.5,0.125,Final
+Italy,1990,1.375,0.25,1.125,Third-place match
+England,1990,1.0,0.75,0.25,Third-place match
+Czechoslovakia,1990,2.0,1.0,1.0,Quarter-finals
+Cameroon,1990,1.25,1.625,-0.375,Quarter-finals
+Yugoslavia,1990,1.375,1.0,0.375,Quarter-finals
+Republic of Ireland,1990,0.375,0.5,-0.25,Quarter-finals
+Spain,1990,1.375,0.875,0.5,Round of 16
+Belgium,1990,1.375,0.875,0.5,Round of 16
+Romania,1990,0.875,0.75,0.25,Round of 16
+Uruguay,1990,0.5,1.25,-0.75,Round of 16
+Brazil,1990,1.0,0.5,0.5,Round of 16
+Netherlands,1990,0.75,1.0,-0.25,Round of 16
+Colombia,1990,0.875,0.875,0.0,Round of 16
+Costa Rica,1990,1.0,1.5,-0.5,Round of 16
+Korea Republic,1990,0.375,2.0,-1.625,Group stage
+Egypt,1990,0.375,0.625,-0.375,Group stage
+Sweden,1990,1.0,2.0,-1.0,Group stage
+Scotland,1990,0.625,1.0,-0.375,Group stage
+United Arab Emirates,1990,0.625,3.625,-3.0,Group stage
+Austria,1990,0.625,1.0,-0.375,Group stage
+United States,1990,0.625,2.625,-2.0,Group stage
+Soviet Union,1990,1.375,1.375,0.0,Group stage
+Argentina,1986,2.0,0.75,1.25,Final
+Germany,1986,1.125,1.0,0.125,Final
+France,1986,1.625,0.75,0.75,Third-place match
+Belgium,1986,1.5,1.875,-0.375,Third-place match
+England,1986,1.375,0.625,0.75,Quarter-finals
+Spain,1986,2.0,0.75,1.25,Quarter-finals
+Brazil,1986,1.875,0.25,1.75,Quarter-finals
+Mexico,1986,1.125,0.375,0.75,Quarter-finals
+Paraguay,1986,1.0,1.5,-0.5,Round of 16
+Denmark,1986,2.5,1.5,1.0,Round of 16
+Italy,1986,1.25,1.5,-0.25,Round of 16
+Morocco,1986,0.75,0.5,0.25,Round of 16
+Poland,1986,0.25,1.75,-1.5,Round of 16
+Uruguay,1986,0.5,2.0,-1.5,Round of 16
+Bulgaria,1986,0.5,1.5,-1.0,Round of 16
+Soviet Union,1986,2.75,1.125,1.625,Round of 16
+Scotland,1986,0.375,1.0,-0.625,Group stage
+Algeria,1986,0.375,1.625,-1.375,Group stage
+Northern Ireland,1986,0.625,2.0,-1.375,Group stage
+Iraq,1986,0.375,1.375,-1.0,Group stage
+Portugal,1986,0.625,1.375,-0.625,Group stage
+Korea Republic,1986,1.375,2.375,-1.0,Group stage
+Canada,1986,0.0,1.625,-1.625,Group stage
+Hungary,1986,0.625,3.0,-2.375,Group stage
+Italy,1982,1.75,0.875,0.875,Final
+Germany,1982,1.625,1.375,0.25,Final
+Poland,1982,1.625,0.75,0.875,Third-place match
+France,1982,2.125,1.625,0.5,Third-place match
+Brazil,1982,3.0,1.25,1.75,Second group stage
+Spain,1982,0.75,1.0,-0.25,Second group stage
+England,1982,1.25,0.25,1.0,Second group stage
+Northern Ireland,1982,1.0,1.375,-0.375,Second group stage
+Soviet Union,1982,1.375,0.75,0.625,Second group stage
+Argentina,1982,1.625,1.375,0.25,Second group stage
+Austria,1982,1.0,0.75,0.25,Second group stage
+Belgium,1982,0.625,1.0,-0.375,Second group stage
+Kuwait,1982,0.625,2.0,-1.375,First group stage
+Czechoslovakia,1982,0.625,1.375,-0.625,First group stage
+Algeria,1982,1.625,1.625,0.0,First group stage
+Chile,1982,1.0,2.625,-1.625,First group stage
+Honduras,1982,0.625,1.0,-0.375,First group stage
+Yugoslavia,1982,0.625,0.625,0.0,First group stage
+Cameroon,1982,0.375,0.375,0.0,First group stage
+El Salvador,1982,0.375,4.375,-4.0,First group stage
+New Zealand,1982,0.625,4.0,-3.375,First group stage
+Peru,1982,0.625,2.0,-1.375,First group stage
+Hungary,1982,4.0,2.0,2.0,First group stage
+Scotland,1982,2.625,2.625,0.0,First group stage
+Argentina,1978,2.0,0.5,1.5,Final
+Netherlands,1978,2.0,1.375,0.625,Final
+Brazil,1978,1.375,0.375,1.0,Third-place match
+Italy,1978,1.25,0.875,0.375,Third-place match
+Austria,1978,1.125,1.625,-0.5,Second round
+Germany,1978,1.625,0.875,0.875,Second round
+Poland,1978,1.0,1.0,0.0,Second round
+Peru,1978,1.125,2.0,-0.875,Second round
+Spain,1978,0.625,0.625,0.0,First round
+Sweden,1978,0.375,1.0,-0.625,First round
+IR Iran,1978,0.625,2.625,-2.0,First round
+Scotland,1978,1.625,2.0,-0.375,First round
+France,1978,1.625,1.625,0.0,First round
+Hungary,1978,1.0,2.625,-1.625,First round
+Mexico,1978,0.625,4.0,-3.375,First round
+Tunisia,1978,1.0,0.625,0.375,First round
+Netherlands,1974,2.125,0.375,1.75,Final
+Germany,1974,1.875,0.625,1.25,Final
+Brazil,1974,0.875,0.625,0.25,Third-place match
+Poland,1974,2.25,0.75,1.625,Third-place match
+Argentina,1974,1.5,2.0,-0.5,Second round
+Germany DR,1974,0.875,0.875,0.0,Second round
+Sweden,1974,1.125,1.0,0.125,Second round
+Yugoslavia,1974,2.0,1.125,0.875,Second round
+Bulgaria,1974,0.625,1.625,-1.0,First round
+Italy,1974,1.625,1.375,0.375,First round
+Uruguay,1974,0.375,2.0,-1.625,First round
+Haiti,1974,0.625,4.625,-4.0,First round
+Scotland,1974,1.0,0.375,0.625,First round
+Australia,1974,0.0,1.625,-1.625,First round
+Chile,1974,0.375,0.625,-0.375,First round
+Zaire,1974,0.0,4.625,-4.625,First round
+Brazil,1970,3.125,1.125,2.0,Final
+Italy,1970,1.625,1.25,0.375,Final
+Germany,1970,2.5,1.5,1.0,Third-place match
+Uruguay,1970,0.625,0.75,-0.125,Third-place match
+Peru,1970,2.25,2.25,0.0,Quarter-finals
+Mexico,1970,1.5,1.0,0.5,Quarter-finals
+Soviet Union,1970,1.375,0.5,0.875,Quarter-finals
+England,1970,0.875,0.875,0.0,Quarter-finals
+Belgium,1970,1.375,1.625,-0.375,Group stage
+Israel,1970,0.375,1.0,-0.625,Group stage
+Bulgaria,1970,1.625,3.0,-1.375,Group stage
+Morocco,1970,0.625,2.0,-1.375,Group stage
+Czechoslovakia,1970,0.625,2.375,-1.625,Group stage
+Romania,1970,1.375,1.625,-0.375,Group stage
+Sweden,1970,0.625,0.625,0.0,Group stage
+El Salvador,1970,0.0,3.0,-3.0,Group stage
+England,1966,1.75,0.5,1.25,Final
+Germany,1966,2.375,1.0,1.375,Final
+Portugal,1966,2.875,1.375,1.5,Third-place match
+Soviet Union,1966,1.625,1.0,0.625,Third-place match
+Korea DPR,1966,1.25,2.25,-1.0,Quarter-finals
+Argentina,1966,1.0,0.5,0.5,Quarter-finals
+Hungary,1966,2.0,1.75,0.25,Quarter-finals
+Uruguay,1966,0.5,1.25,-0.75,Quarter-finals
+France,1966,0.625,1.625,-1.0,Group stage
+Bulgaria,1966,0.375,2.625,-2.375,Group stage
+Spain,1966,1.375,1.625,-0.375,Group stage
+Chile,1966,0.625,1.625,-1.0,Group stage
+Mexico,1966,0.375,1.0,-0.625,Group stage
+Switzerland,1966,0.375,3.0,-2.625,Group stage
+Brazil,1966,1.375,2.0,-0.625,Group stage
+Italy,1966,0.625,0.625,0.0,Group stage
+Brazil,1962,2.375,0.875,1.5,Final
+Czechoslovakia,1962,1.125,1.125,0.0,Final
+Chile,1962,1.625,1.375,0.375,Third-place match
+Yugoslavia,1962,1.625,1.125,0.5,Third-place match
+Soviet Union,1962,2.25,1.75,0.5,Quarter-finals
+England,1962,1.25,1.5,-0.25,Quarter-finals
+Hungary,1962,2.0,0.75,1.25,Quarter-finals
+Germany,1962,1.0,0.5,0.5,Quarter-finals
+Bulgaria,1962,0.375,2.375,-2.0,Group stage
+Mexico,1962,1.0,1.375,-0.375,Group stage
+Italy,1962,1.0,0.625,0.375,Group stage
+Switzerland,1962,0.625,2.625,-2.0,Group stage
+Colombia,1962,1.625,3.625,-2.0,Group stage
+Uruguay,1962,1.375,2.0,-0.625,Group stage
+Argentina,1962,0.625,1.0,-0.375,Group stage
+Spain,1962,0.625,1.0,-0.375,Group stage
+Brazil,1958,2.625,0.625,2.0,Final
+Sweden,1958,2.0,1.125,0.875,Final
+France,1958,3.875,2.5,1.375,Third-place match
+Germany,1958,2.0,2.375,-0.375,Third-place match
+Northern Ireland,1958,1.125,1.875,-0.75,Quarter-finals
+Yugoslavia,1958,1.75,1.75,0.0,Quarter-finals
+Wales,1958,0.75,0.75,0.0,Quarter-finals
+Soviet Union,1958,1.0,1.25,-0.25,Quarter-finals
+Czechoslovakia,1958,2.125,1.375,0.75,Group stage play-off
+Hungary,1958,1.75,1.25,0.5,Group stage play-off
+England,1958,1.0,1.25,-0.25,Group stage play-off
+Paraguay,1958,3.0,4.0,-1.0,Group stage
+Argentina,1958,1.625,3.375,-1.625,Group stage
+Austria,1958,0.625,2.375,-1.625,Group stage
+Mexico,1958,0.375,2.625,-2.375,Group stage
+Scotland,1958,1.375,2.0,-0.625,Group stage
+Germany,1954,4.125,2.375,1.875,Final
+Hungary,1954,5.0,1.875,3.25,Final
+Austria,1954,3.375,2.375,1.0,Third-place match
+Uruguay,1954,3.0,1.75,1.25,Third-place match
+Yugoslavia,1954,0.625,0.875,-0.25,Quarter-finals
+Brazil,1954,2.375,1.5,0.875,Quarter-finals
+England,1954,2.375,2.375,0.0,Quarter-finals
+Switzerland,1954,2.75,2.75,0.0,Quarter-finals
+Türkiye,1954,3.375,3.625,-0.375,Group stage play-off
+Italy,1954,2.0,2.375,-0.375,Group stage play-off
+Korea Republic,1954,0.0,8.0,-8.0,Group stage
+Belgium,1954,2.125,3.375,-1.25,Group stage
+Scotland,1954,0.0,4.0,-4.0,Group stage
+Czechoslovakia,1954,0.0,3.5,-3.5,Group stage
+France,1954,1.5,1.5,0.0,Group stage
+Mexico,1954,1.0,4.0,-3.0,Group stage
+Sweden,1950,2.25,3.0,-0.75,Final stage
+Spain,1950,1.625,2.0,-0.375,Final stage
+Uruguay,1950,3.75,1.25,2.5,Final stage
+Brazil,1950,3.625,1.0,2.625,Final stage
+Chile,1950,1.625,2.0,-0.375,Group stage
+United States,1950,1.375,2.625,-1.375,Group stage
+Italy,1950,2.0,1.5,0.5,Group stage
+Paraguay,1950,1.0,2.0,-1.0,Group stage
+Bolivia,1950,0.0,8.0,-8.0,Group stage
+England,1950,0.625,0.625,0.0,Group stage
+Switzerland,1950,1.375,2.0,-0.625,Group stage
+Mexico,1950,0.625,3.375,-2.625,Group stage
+Yugoslavia,1950,2.375,1.0,1.375,Group stage
+Brazil,1938,2.5,2.0,0.5,Third-place match
+Sweden,1938,3.625,3.0,0.625,Third-place match
+Italy,1938,2.5,1.125,1.375,Final
+Hungary,1938,3.75,1.25,2.5,Final
+Czechoslovakia,1938,1.375,0.875,0.5,Quarter-finals
+Cuba,1938,1.5,3.625,-2.125,Quarter-finals
+Switzerland,1938,1.5,1.5,0.0,Quarter-finals
+France,1938,2.0,2.0,0.0,Quarter-finals
+Germany,1938,1.25,2.125,-0.875,Round of 16
+Romania,1938,1.75,2.125,-0.375,Round of 16
+Norway,1938,0.75,1.5,-0.75,Round of 16
+Dutch East Indies,1938,0.0,6.0,-6.0,Round of 16
+Belgium,1938,1.0,3.0,-2.0,Round of 16
+Poland,1938,3.75,4.5,-0.75,Round of 16
+Netherlands,1938,0.0,2.25,-2.25,Round of 16
+Italy,1934,2.125,0.5,1.625,Final
+Czechoslovakia,1934,2.125,1.375,0.75,Final
+Germany,1934,2.75,2.0,0.75,Third-place match
+Austria,1934,1.625,1.625,0.0,Third-place match
+Spain,1934,1.25,0.875,0.25,Quarter-finals
+Hungary,1934,2.5,2.0,0.5,Quarter-finals
+Switzerland,1934,2.5,2.5,0.0,Quarter-finals
+Sweden,1934,2.0,2.0,0.0,Quarter-finals
+Romania,1934,1.0,2.0,-1.0,Round of 16
+Egypt,1934,2.0,4.0,-2.0,Round of 16
+France,1934,1.5,2.25,-0.75,Round of 16
+Netherlands,1934,2.0,3.0,-1.0,Round of 16
+Argentina,1934,2.0,3.0,-1.0,Round of 16
+Brazil,1934,1.0,3.0,-2.0,Round of 16
+Belgium,1934,2.0,5.0,-3.0,Round of 16
+United States,1934,1.0,7.0,-6.0,Round of 16
+Uruguay,1930,3.75,0.75,3.0,Final
+Argentina,1930,3.625,1.75,1.75,Final
+Yugoslavia,1930,2.375,2.375,0.0,Semi-finals
+United States,1930,2.375,2.0,0.375,Semi-finals
+Chile,1930,1.625,1.0,0.625,Group stage
+Romania,1930,1.5,2.5,-1.0,Group stage
+Brazil,1930,2.5,1.0,1.5,Group stage
+Bolivia,1930,0.0,4.0,-4.0,Group stage
+Paraguay,1930,0.5,1.5,-1.0,Group stage
+Belgium,1930,0.0,2.0,-2.0,Group stage
+France,1930,1.375,1.0,0.375,Group stage
+Mexico,1930,1.375,4.375,-3.0,Group stage
+Peru,1930,0.5,2.0,-1.5,Group stage
